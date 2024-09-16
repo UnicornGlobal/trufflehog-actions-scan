@@ -1,9 +1,11 @@
 #!/bin/bash
 
+git config --global --add safe.directory '*'
+
 whoami
 ls -lahtr /
 ls -lahtr /github
-cat ~/.gitconfig
+ls -lahtr ~
 
 repo="."
 args="--regex --entropy=False --max_depth=50 --repo_path=${repo} --exclude_paths .truffleignore"
