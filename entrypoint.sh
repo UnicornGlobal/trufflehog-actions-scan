@@ -2,13 +2,6 @@
 
 git config --global --add safe.directory '*'
 
-whoami
-pwd
-ls -lahtr .
-ls -lahtr /
-ls -lahtr /github
-ls -lahtr ~
-
 args="--regex --entropy=False --max_depth=50 --exclude_paths .truffleignore"
 
 if [ -n "${INPUT_SCANARGUMENTS}" ]; then
