@@ -24,4 +24,4 @@ RUN git config --global --add safe.directory '*'
 ADD entrypoint.sh /entrypoint.sh
 ADD regexes.json /regexes.json
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["sh", "/entrypoint.sh"]
