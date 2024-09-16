@@ -1,5 +1,7 @@
 #!/bin/bash
 
+ls -lahtr /
+
 repo="."
 args="--regex --entropy=False --max_depth=50 --repo_path=${repo} --exclude_paths .truffleignore"
 
